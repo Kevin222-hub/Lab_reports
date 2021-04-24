@@ -131,7 +131,7 @@ def my_lin_fit(x, y, sd_y, verbose=True, plot=False, grid=True, err=True):
         print ('cov(m, c) = ', cov_mc)
         
     if (plot):
-        fit_graph(x, y,sd_y, m,sm,c,sc,cov_mc, grid, err)
+        my_fit_graph(x, y,sd_y, m,sm,c,sc,cov_mc, grid, err)
     
     return m, sm, c, sc, cov_mc
  
