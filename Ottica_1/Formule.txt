@@ -1,0 +1,23 @@
+
+# Misure
+
+\sigma_{V_{mis}} = \sqrt{\sigma_{Laser}^{2} + \sigma_{Multimetro}^2}
+
+# Pt 1
+
+\lambda(x_{Min}) = \frac{d}{L*m}*x_{Min}
+
+\sigma_\lambda = \sqrt{ \left ( \frac{d}{m*L}*\sigma_{x} \right )^2 + \left ( -\frac{x*d}{m*L^2}*\sigma_L \right )^2}
+
+
+# Pt 2
+
+\beta(x) = \frac{\pi*d*(x - x_{offset})}{\lambda*L}
+
+I(x) = I_{Max}*\left ( \frac{sin(\beta(x))}{\beta(x)} \right )^2
+
+# Pt 3
+
+d_{Capello} = \frac{L*\lambda}{A} # A: Coefficente angolare fit
+
+\sigma_{d} = \sqrt{ \left (\frac{L}{A}*\sigma_\lambda  \right )^2  + \left (\frac{\lambda}{A}*\sigma_L  \right )^2 + \left (-\frac{\lambda*L}{A^2}*\sigma_A  \right )^2}
