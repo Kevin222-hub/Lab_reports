@@ -271,6 +271,7 @@ def intersect(Value,x,y,sdx = 0,sdy = 0,plot = False):
         plt.plot(x,y,'.')
         for i in range(0,len(X)):
             plt.vlines(X[i],min(y),max(y),linestyles='dashed',color='g')
+        plt.show()
     
     return X,sX
 ##################################################################################################
